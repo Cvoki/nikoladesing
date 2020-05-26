@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Nikola Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="pocetna.html"><img src="slike/LOGO.png" class="logo"></a>
+            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()">
+            <div class="navigacioni-meni" id="navigacioni-meni">
+                <p class="izlaz" id="dugme-x" onclick="padajucisklanjanje()">X</p>
+                <ul>
+                    <li>
+                        <a>Pocenta</a>
+                    </li>
+                    <li>
+                        <a>About</a>
+                    </li>
+                    <li>
+                        <p onclick="projektipadanje()" class="dropdown-toggle">Projekti</p>
+                        <ul id="projekti-padanje" class="projekti-padanje-meni">
+                            <li>
+                                <a>Torax</a>
+                            </li>
+                            <li>
+                                <a>Isoterm</a>
+                            </li>
+                            <li>
+                                <a>Module</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div name="slider">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators mb-1">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="toraxe.html"><img class="d-block w-100 slike" src="slike/slider/toraxe.png" alt="First slide"></a>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 slike" src="slike/slider/modul.png" alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100 slike" src="slike/slider/toyota.png" alt="Third slide">
+                  </div>
+                </div>
+              </div>    
+        </div>
+    </section>
+
+    <footer class="w-100 bg-secondary mt-2">
+        <p class="text-white text-center">Nikola Design | Copyright 2020</p>
+    </footer>
+
+    <script src="meni.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
