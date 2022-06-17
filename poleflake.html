@@ -1,0 +1,82 @@
+<html>
+<head>
+    <title>Nikola Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="slike/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="slike/LOGO.png" class="logo"></a>
+            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()">
+            <div class="navigacioni-meni" id="navigacioni-meni">
+                <p class="izlaz" id="dugme-x" onclick="padajucisklanjanje()">X</p>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <p onclick="projektipadanje()" class="dropdown-toggle">Projects</p>
+                        <ul id="projekti-padanje" class="projekti-padanje-meni">
+                            <li>
+                                <a href="toraxe.html">Toraxe</a>
+                            </li>
+                            <li>
+                                <a href="modul.html">Modul</a>
+                            </li>
+                            <li>
+                                <a href="toyota.html">Toyota</a>
+                            </li>
+                            <li>
+                                <a href="poleflake.html">Poleflake</a>
+                            </li>
+                            <li>
+                                <a href="isopod.html">Isopod</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <img src="slike/poleflake/1.png" class="w-100 img-fluid">
+        <img src="slike/poleflake/2.png" class="w-100 img-fluid">
+        <img src="slike/poleflake/3.png" class="w-100 img-fluid">
+        <img src="slike/poleflake/4.png" class="w-100 img-fluid">
+        <img src="slike/poleflake/5.png" class="w-100 img-fluid">
+        <img src="slike/poleflake/6.png" class="w-100 img-fluid">
+    </section>
+
+    <footer class="w-100 bg-secondary mt-2">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 m-4">
+                    <a href="https://www.facebook.com/nik.ola.dsgn/"class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/nik_ola_design/"class="fa fa-instagram"></a>
+                    <a href="https://www.behance.net/nikoladjure266" class="fa fa-behance"></a>
+                    </div>
+                    <div class="col-md-3">
+                        <br>
+                        <p class="paragraf text-white text-center">Nikola Design | Copyright 2021</p>
+                        <p class="paragraf text-grey text-center">nikola.djuraskovic@outlook.com</p>
+                    </div>
+                 
+            </div>
+        </div>
+    </footer>
+    <script src="meni.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

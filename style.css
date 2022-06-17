@@ -1,0 +1,186 @@
+.logo{
+    width: 80px;
+    height: 100px;
+    padding: 10px;
+    margin-left: 20px;
+}
+.logo:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.dugme-meni{
+    float: right;
+    margin-right: 20px;
+    margin-top: 35px;
+    width: 60px;
+    height: 40px;
+    opacity: .5;
+}
+.dugme-meni:hover{
+    opacity: .2;
+    cursor: pointer;
+}
+.slike{
+    height:100vh;
+    object-fit: cover;
+}
+.navigacioni-meni{
+    background-color: black;
+    opacity: 0.9;
+    padding:5px;
+    padding-top:50px;
+    font-size: 2vw;
+    color:white;
+    width:30vw;
+    height: 100vh;
+    position:fixed;
+    z-index:1;
+    top:0px;
+    right:0px;
+    display:none;
+}
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact4 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+.contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+    color: #3e4555;
+  }
+  .contact4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.contact4 .form-control {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact4 .form-control:focus {
+  border-color: #ffffff;
+}
+.contact4 input::-webkit-input-placeholder,
+.contact4 textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input:-ms-input-placeholder,
+.contact4 textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input::placeholder,
+.contact4 textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 .right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+.contact4.bg-info {
+    background-color: silver !important;
+}
+
+.contact4 .text-inverse {
+    color: #3e4555 !important;
+}
+.navigacioni-meni ul{
+    list-style-type: none;
+    margin-top: 50px;
+}
+.navigacioni-meni li a{
+    text-decoration: none;
+    color:white;
+}
+.navigacioni-meni li:hover{
+    opacity:0.7;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.izlaz{
+    color:white;
+    font-size:2vw;
+    position: absolute;
+    right: 38px;
+    top: 25px;
+    cursor: pointer;
+}
+.izlaz:hover{
+    opacity:0.7;
+}
+.projekti-padanje-meni{
+    display:none;
+}
+.modul{
+    text-align:left;
+}
+.toraxe{
+    text-align: left;
+}
+footer{
+    bottom: 0;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    margin:center;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  .fa-facebook {
+    background: silver;
+    color: white;
+  }
+  .fa-instagram{
+    background:silver;
+    color: white;
+  }
+  .fa-email{
+    background:silver;
+    color: white;
+  }
+  .fa-behance{
+    background:silver;
+    color: white;
+  }
+@media screen and (max-width: 991px)
+{
+    .navigacioni-meni{
+        width:100%;
+        opacity:1;
+    }
+    .navigacioni-meni li{
+        font-size:32px;
+    }
+    .izlaz{
+        font-size:40px;
+    }
+    @media (min-width: 1024px) {
+        .contact4 .contact-box {
+        padding: 80px 105px 80px 0px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .contact4 .contact-box {
+        padding-left: 15px;
+        padding-right: 15px;
+        }
+    }
+    
+    @media (max-width: 1023px) {
+        .contact4 .right-image {
+                position: relative;
+                bottom: -95px;
+        }
+    }
+}
