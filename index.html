@@ -1,7 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="sr">
 <head>
-    <title>Nikola Design</title>
+    <meta charset="UTF-8">
+    <title>Nikola Design | Industrijski dizajner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio industrijskog dizajnera Nikole Đuraškovića — projekti Toraxe, Modul, Toyota, Poleflake, Isopod i Mask.">
+    <meta property="og:title" content="Nikola Design | Industrijski dizajner">
+    <meta property="og:description" content="Portfolio industrijskog dizajnera Nikole Đuraškovića.">
+    <meta property="og:image" content="slike/slider/toraxe.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,8 +17,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="slike/LOGO.png" class="logo"></a>
-            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()">
+            <a href="index.html"><img src="slike/LOGO.png" class="logo" alt="Nikola Design logo"></a>
+            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()" alt="Otvori meni">
             <div class="navigacioni-meni" id="navigacioni-meni">
                 <p class="izlaz" id="dugme-x" onclick="padajucisklanjanje()">X</p>
                 <ul>
@@ -42,6 +49,9 @@
                             <li>
                                 <a href="isopod.html">Isopod</a>
                             </li>
+                            <li>
+                                <a href="mask.html">Mask</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -53,29 +63,53 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators mb-1">
                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="3" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="4" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <a href="toraxe.html"><img class="d-block w-100 slike" src="slike/slider/toraxe.png" alt="First slide"></a>
+                    <a href="toraxe.html"><img class="d-block w-100 slike" src="slike/slider/toraxe.jpg" alt="Toraxe - dizajn sekire">
+                      <div class="carousel-caption"><h3>Toraxe</h3><span>Pogledaj projekat</span></div>
+                    </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="modul.html"><img class="d-block w-100 slike" src="slike/slider/modul.png" alt="Second slide"></a>
+                    <a href="modul.html"><img class="d-block w-100 slike" src="slike/slider/modul.jpg" alt="Modul - dizajn zvučnika">
+                      <div class="carousel-caption"><h3>Modul</h3><span>Pogledaj projekat</span></div>
+                    </a>
                   </div>
                   <div class="carousel-item">
-                   <a href="toyota.html"> <img class="d-block w-100 slike" src="slike/slider/toyota.png" alt="Third slide"></a>
+                   <a href="toyota.html"> <img class="d-block w-100 slike" src="slike/slider/toyota.jpg" alt="Toyota - dizajn vozila">
+                      <div class="carousel-caption"><h3>Toyota</h3><span>Pogledaj projekat</span></div>
+                    </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="poleflake.html"><img class="d-block w-100 slike" src="slike/slider/poleflake.png" alt="Fourth slide"></a>
+                    <a href="poleflake.html"><img class="d-block w-100 slike" src="slike/slider/poleflake.jpg" alt="Poleflake - dizajn proizvoda">
+                      <div class="carousel-caption"><h3>Poleflake</h3><span>Pogledaj projekat</span></div>
+                    </a>
                   </div>
                   <div class="carousel-item">
-                    <a href="isopod.html"><img class="d-block w-100 slike" src="slike/slider/isopod.png" alt="Fifth slide"></a>
+                    <a href="isopod.html"><img class="d-block w-100 slike" src="slike/slider/isopod.jpg" alt="Isopod - dizajn proizvoda">
+                      <div class="carousel-caption"><h3>Isopod</h3><span>Pogledaj projekat</span></div>
+                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="mask.html"><img class="d-block w-100 slike" src="slike/slider/mask.jpg" alt="Mask - dizajn proizvoda">
+                      <div class="carousel-caption"><h3>Mask</h3><span>Pogledaj projekat</span></div>
+                    </a>
                   </div>
                 </div>
-              </div>    
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Prethodni</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Sledeći</span>
+                </a>
+              </div>
         </div>
     </section>
 
@@ -89,10 +123,10 @@
                     </div>
                     <div class="col-md-3">
                         <br>
-                        <p class="paragraf text-white text-center">Nikola Design | Copyright 2021</p>
+                        <p class="paragraf text-white text-center">Nikola Design | Copyright <span id="godina"></span></p>
                         <p class="paragraf text-grey text-center">nikola.djuraskovic@outlook.com</p>
                     </div>
-                 
+
             </div>
         </div>
 

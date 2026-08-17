@@ -17,3 +17,9 @@ function projektipadanje(){
         brojacpadanje--;
     }
 }
+document.addEventListener("DOMContentLoaded", function(){
+    var godina = document.getElementById("godina");
+    if(godina){
+        godina.textContent = new Date().getFullYear();
+    }
+});

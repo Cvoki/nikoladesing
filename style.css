@@ -1,52 +1,109 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700);
+
+:root{
+    --accent: #ffc72c;
+    --accent-dark: #e0ac00;
+    --dark: #141414;
+    --dark-soft: #1f1f1f;
+    --grey: #6b7280;
+    --transition: .25s ease;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    color: #222;
+}
+
+img{
+    display: block;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible{
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ---------- Navigacija ---------- */
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,.06);
+}
+
 .logo{
     width: 80px;
     height: 100px;
     padding: 10px;
     margin-left: 20px;
+    transition: transform var(--transition), opacity var(--transition);
 }
 .logo:hover{
-    opacity: .8;
+    opacity: .85;
+    transform: scale(1.03);
     cursor: pointer;
 }
+
 .dugme-meni{
-    float: right;
     margin-right: 20px;
-    margin-top: 35px;
     width: 60px;
     height: 40px;
-    opacity: .5;
+    opacity: .55;
+    cursor: pointer;
+    transition: opacity var(--transition), transform var(--transition);
 }
 .dugme-meni:hover{
-    opacity: .2;
-    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.05);
 }
+
 .slike{
-    height:100vh;
+    height: calc(100vh - 110px);
     object-fit: cover;
 }
-.navigacioni-meni{
-    background-color: black;
-    opacity: 0.9;
-    padding:5px;
-    padding-top:50px;
-    font-size: 2vw;
-    color:white;
-    width:30vw;
-    height: 100vh;
-    position:fixed;
-    z-index:1;
-    top:0px;
-    right:0px;
-    display:none;
+
+@keyframes meniFadeIn{
+    from{ opacity: 0; transform: translateX(16px); }
+    to{ opacity: 1; transform: translateX(0); }
 }
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
+.navigacioni-meni{
+    background-color: var(--dark);
+    padding: 5px;
+    padding-top: 50px;
+    font-size: 2vw;
+    color: white;
+    width: 30vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1001;
+    top: 0px;
+    right: 0px;
+    display: none;
+    box-shadow: -8px 0 32px rgba(0,0,0,.3);
+    animation: meniFadeIn .3s ease;
+}
+
 .contact4 {
   font-family: "Montserrat", sans-serif;
 	color: #8d97ad;
   font-weight: 300;
 }
 .contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
-    color: #3e4555;
+    color: #fff;
   }
   .contact4 .font-weight-medium {
 	font-weight: 500;
@@ -54,11 +111,15 @@
 
 .contact4 .form-control {
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 6px;
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
 .contact4 .form-control:focus {
-  border-color: #ffffff;
+  border-color: var(--accent);
+  background: rgba(255,255,255,.06);
+  box-shadow: 0 0 0 3px rgba(255,199,44,.25);
 }
 .contact4 input::-webkit-input-placeholder,
 .contact4 textarea::-webkit-input-placeholder {
@@ -82,75 +143,173 @@
   top: 0;
 }
 .contact4.bg-info {
-    background-color: silver !important;
+    background: linear-gradient(135deg, #1c1c1c 0%, #2e2e2e 100%) !important;
 }
 
 .contact4 .text-inverse {
-    color: #3e4555 !important;
+    color: #141414 !important;
+}
+.contact4 .btn.bg-white{
+    background: var(--accent) !important;
+    color: #141414 !important;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+.contact4 .btn.bg-white:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(255,199,44,.35);
 }
 .navigacioni-meni ul{
     list-style-type: none;
     margin-top: 50px;
 }
-.navigacioni-meni li a{
-    text-decoration: none;
-    color:white;
+.navigacioni-meni li{
+    padding: 6px 0;
 }
-.navigacioni-meni li:hover{
-    opacity:0.7;
+.navigacioni-meni li a,
+.navigacioni-meni li p{
+    text-decoration: none;
+    color: white;
+    transition: color var(--transition);
+}
+.navigacioni-meni li a:hover,
+.navigacioni-meni li p:hover{
+    color: var(--accent);
     cursor: pointer;
     text-decoration: none;
 }
 
 
 .izlaz{
-    color:white;
-    font-size:2vw;
+    color: white;
+    font-size: 2vw;
     position: absolute;
     right: 38px;
     top: 25px;
     cursor: pointer;
+    transition: color var(--transition), transform var(--transition);
 }
 .izlaz:hover{
-    opacity:0.7;
+    color: var(--accent);
+    transform: rotate(90deg);
 }
 .projekti-padanje-meni{
-    display:none;
+    display: none;
 }
-.modul{
-    text-align:left;
+.projekti-padanje-meni li{
+    padding-left: 10px;
 }
-.toraxe{
+
+/* ---------- Case study tekst ---------- */
+.modul, .toraxe{
     text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.9;
+    color: #4a4a4a;
+    padding: 48px 0;
 }
+
+/* ---------- Carousel ---------- */
+.carousel-item::after{
+    content: "";
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,.7), rgba(0,0,0,0));
+    pointer-events: none;
+}
+.carousel-caption{
+    left: 40px;
+    right: auto;
+    bottom: 40px;
+    text-align: left;
+    padding: 0;
+}
+.carousel-caption h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: .5px;
+    margin: 0 0 10px;
+}
+.carousel-caption span{
+    display: inline-block;
+    padding: 6px 16px;
+    background: var(--accent);
+    color: #141414;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+.carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.5);
+    transition: background-color var(--transition), transform var(--transition);
+}
+.carousel-indicators li.active{
+    background-color: var(--accent);
+    transform: scale(1.2);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color: rgba(0,0,0,.35);
+    border-radius: 50%;
+    padding: 22px;
+    background-size: 45%;
+    transition: background-color var(--transition);
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon{
+    background-color: var(--accent);
+}
+
+/* ---------- Footer ---------- */
 footer{
     bottom: 0;
 }
+footer.bg-secondary{
+    background: var(--dark) !important;
+}
+.paragraf{
+    margin: 4px 0;
+    font-size: 14px;
+    letter-spacing: .3px;
+}
 .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    margin:center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    margin: 0 10px 0 0;
+    font-size: 18px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.1);
+    color: #fff;
+    transition: background var(--transition), transform var(--transition);
   }
-  
+
   .fa:hover {
-    opacity: 0.7;
+    transform: translateY(-3px);
   }
-  .fa-facebook {
-    background: silver;
-    color: white;
+  .fa-facebook:hover {
+    background: #1877f2;
   }
-  .fa-instagram{
-    background:silver;
-    color: white;
+  .fa-instagram:hover{
+    background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
   }
-  .fa-email{
-    background:silver;
-    color: white;
-  }
-  .fa-behance{
-    background:silver;
-    color: white;
+  .fa-behance:hover {
+    background: #1769ff;
   }
 @media screen and (max-width: 991px)
 {
@@ -164,19 +323,26 @@ footer{
     .izlaz{
         font-size:40px;
     }
+    .carousel-caption h3{
+        font-size: 1.4rem;
+    }
+    .carousel-caption{
+        left: 20px;
+        bottom: 24px;
+    }
     @media (min-width: 1024px) {
         .contact4 .contact-box {
         padding: 80px 105px 80px 0px;
         }
     }
-    
+
     @media (max-width: 767px) {
         .contact4 .contact-box {
         padding-left: 15px;
         padding-right: 15px;
         }
     }
-    
+
     @media (max-width: 1023px) {
         .contact4 .right-image {
                 position: relative;

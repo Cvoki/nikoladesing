@@ -30,6 +30,7 @@ Fokus je na fotografijama proizvoda. Sve ostalo — navigacija, tipografija, ras
 | `toyota.html` | Studija slučaja — Toyota |
 | `poleflake.html` | Studija slučaja — Poleflake |
 | `isopod.html` | Studija slučaja — Isopod |
+| `mask.html` | Studija slučaja — Mask |
 
 ## Tehnologije
 
@@ -93,7 +94,7 @@ Podešavanje se nalazi pod *Settings → Pages → Source: main branch*.
 
 ## Napomena
 
-Kontakt forma je vizuelna — statični hosting ne može sam da primi slanje. Ako zatreba da radi, najlakše je preko servisa tipa Formspree ili prelaskom na Netlify Forms.
+Kontakt forma šalje poruke preko [FormSubmit](https://formsubmit.co/) na email adresu iz `contact.html` — bez potrebe za sopstvenim serverom. Prva poslata poruka zahteva potvrdu email adrese.
 
 ## Licenca
 

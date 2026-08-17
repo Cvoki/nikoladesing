@@ -30,6 +30,7 @@ The focus is on the product photography. Everything else — navigation, typogra
 | `toyota.html` | Case study — Toyota |
 | `poleflake.html` | Case study — Poleflake |
 | `isopod.html` | Case study — Isopod |
+| `mask.html` | Case study — Mask |
 
 ## Built with
 
@@ -93,7 +94,7 @@ The setting lives under *Settings → Pages → Source: main branch*.
 
 ## Note
 
-The contact form is presentational — static hosting can't receive submissions on its own. To make it work, the simplest routes are a service like Formspree or moving to Netlify Forms.
+The contact form sends messages via [FormSubmit](https://formsubmit.co/) to the email address set in `contact.html` — no backend required. The first submission requires confirming that email address.
 
 ## License
 

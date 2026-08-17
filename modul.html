@@ -1,7 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="sr">
 <head>
-    <title>Nikola Design</title>
+    <meta charset="UTF-8">
+    <title>Nikola Design | Modul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modul — dizajn zvučnika sa pet unutrašnjih zvučnika za surround efekat, inspirisan Mesecom.">
+    <meta property="og:title" content="Nikola Design | Modul">
+    <meta property="og:description" content="Modul — dizajn zvučnika sa surround efektom, inspirisan Mesecom.">
+    <meta property="og:image" content="slike/slider/modul.jpg">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,8 +17,8 @@
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="slike/LOGO.png" class="logo"></a>
-            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()">
+            <a href="index.html"><img src="slike/LOGO.png" class="logo" alt="Nikola Design logo"></a>
+            <img src="slike/bars-solid.svg" class="dugme-meni" id="hamburger-dugme" onclick="padajuci()" alt="Otvori meni">
             <div class="navigacioni-meni" id="navigacioni-meni">
                 <p class="izlaz" id="dugme-x" onclick="padajucisklanjanje()">X</p>
                 <ul>
@@ -42,6 +49,9 @@
                             <li>
                                 <a href="isopod.html">Isopod</a>
                             </li>
+                            <li>
+                                <a href="mask.html">Mask</a>
+                            </li>
                         </ul>
                     </li>
                 </ul>
@@ -49,36 +59,34 @@
         </nav>
     </header>
     <section>
-        <img src="slike/modul/1.png" class="w-100 img-fluid">
+        <img src="slike/modul/1.jpg" class="w-100 img-fluid" alt="Modul zvučnik - dizajn 1">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-    
+
                 </div>
                 <div class="col-md-4">
                     <p color="text-grey"class="modul">Modul speaker is designed on a platform that is built of five speakers inside, which are all <br>
                         oriented in different directions and that causes the surround sound effect.<br><br>
-                        
+
                         Project started with a careful research on how people consume music in some space, how can<br>
                         they move around and hear the same sound- or how can more people in one space share that <br>
                         experiance. That research provaded a solid base which led to creation of the ball shaped <br>
                         concept inspired by the Moon. </p>
                 </div>
                 <div class="col-md-4">
-                    
+
                 </div>
             </div>
         </div>
 
-        
-        
-        <img src="slike/modul/2.png" class="w-100 img-fluid">
-        <img src="slike/modul/3.png" class="w-100 img-fluid">
-        <img src="slike/modul/4.png" class="w-100 img-fluid">
+        <img src="slike/modul/2.jpg" class="w-100 img-fluid" alt="Modul zvučnik - dizajn 2">
+        <img src="slike/modul/3.jpg" class="w-100 img-fluid" alt="Modul zvučnik - dizajn 3">
+        <img src="slike/modul/4.jpg" class="w-100 img-fluid" alt="Modul zvučnik - dizajn 4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-4">
-    
+
                 </div>
                 <div class="col-md-4">
                     <p color="text-grey"class="modul">Body of the speaker was made with a help of a rapid prototyping technologies, after which it<br>
@@ -87,14 +95,14 @@
                         stay on high level.</p>
                 </div>
                 <div class="col-md-4">
-    
+
                 </div>
-    
+
             </div>
         </div>
-        
-    
-        <img src="slike/modul/5.png" class="w-100 img-fluid">
+
+
+        <img src="slike/modul/5.jpg" class="w-100 img-fluid" alt="Modul zvučnik - dizajn 5">
     </section>
 
     <footer class="w-100 bg-secondary mt-2">
@@ -107,10 +115,10 @@
                     </div>
                     <div class="col-md-3">
                         <br>
-                        <p class="paragraf text-white text-center">Nikola Design | Copyright 2021</p>
+                        <p class="paragraf text-white text-center">Nikola Design | Copyright <span id="godina"></span></p>
                         <p class="paragraf text-grey text-center">nikola.djuraskovic@outlook.com</p>
                     </div>
-                 
+
             </div>
         </div>
     </footer>
